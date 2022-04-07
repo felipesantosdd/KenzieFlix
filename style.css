@@ -20,19 +20,20 @@ body {
 
 .box01 img {
     width: 229px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .box01 p {
     color: white;
     font-size: 32px;
-    margin-top: 70px;}
+    margin-top: 50px;
+}
 
 .box02 {
     height: auto;
     display: flex;
     justify-content: space-around;
-    padding: 100px;
+    padding: 40px;
 
 }
 
@@ -40,7 +41,7 @@ body {
     width: 160px;
     height: 180px;
     text-align: center;
-    color: rgb(156, 144, 144);    
+    color: #9C9C9C;
 }
 
 .box:hover {
@@ -49,14 +50,19 @@ body {
     color: white;
 }
 
-.box img:hover {
+.imgbox img:hover {
     transform: scale(1.5);
     border-radius: 10px;
 }
 
-.box p{
-    margin-top: 20px;
+.box p {
+    margin-top: 15px;
     font-size: 14px;
+}
+
+.box02{
+    width: 75%;
+    margin: 0 auto;
 }
 
 
@@ -68,8 +74,39 @@ body {
     border-radius: 5px;
 }
 
+.addbox{
+    width: 160px;
+    height: 160px;
+    max-width: 160px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    opacity: 0,5;
+    
+}
 
-.imgbox {
+
+.addbox img{
+    width: 53px;
+    height: 53px;
+    margin: 30% auto; 
+    opacity: 0.5;  
+}
+
+.addbox img:hover{
+    opacity: 1;
+}
+
+
+.addbox:hover,
+.imgbox:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+.imgbox,
+.addbox {
     overflow: hidden;
 }
 
