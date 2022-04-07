@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .container {
@@ -25,9 +26,7 @@ body {
 .box01 p {
     color: white;
     font-size: 32px;
-    margin-top: 70px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
-}
+    margin-top: 70px;}
 
 .box02 {
     height: auto;
@@ -57,6 +56,7 @@ body {
 
 .box p{
     margin-top: 20px;
+    font-size: 14px;
 }
 
 
