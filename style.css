@@ -1,133 +1,130 @@
 body {
+    display: flex;
     background-color: black;
+    flex-flow: row wrap;
+    flex-direction: column;
+    text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.container {
-    display: flexbox;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    flex-wrap: wrap;
 
+/* ---------- Header ---------- */
+
+
+.logo {
+    width: 100%;
+    height: 20vh;
+    margin: 0 auto;
+    align-items: flex-end;
 }
 
-.box01 {
-    width: auto;
-    height: auto;
-    text-align: center;
-}
-
-.box01 img {
+.logo img {
     width: 229px;
-    padding: 15px;
+    height: 68px;
 }
 
-.box01 p {
+/* ---------- Fim do Header ---------- */
+
+/* ---------- Main ---------- */
+main {
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+main h2 {
     color: white;
     font-size: 32px;
-    margin-top: 50px;
+    margin: 20px;
 }
 
-.box02 {
-    height: auto;
+.users-box {
+    margin: auto;
     display: flex;
-    justify-content: space-around;
-    padding: 40px;
-
+    width: auto;
+    justify-content: center;
 }
 
 .box {
     width: 160px;
-    height: 180px;
-    text-align: center;
+    height: 190px;
     color: #9C9C9C;
-    border-radius: 20px;
+    padding: 13px;
 }
-
-.box:hover {
-    zoom: 100%;
-    width: 160px;
-    color: white;
-}
-
-.imgbox img:hover {
-    transform: scale(1.5);
-    border-radius: 10px;
-}
-
-.box p {
-    margin-top: 15px;
-    font-size: 14px;
-}
-
-.box02{
-    width: 75%;
-    margin: 0 auto;
-}
-
 
 .box img {
     width: 160px;
     height: 160px;
-    max-width: 160px;
-    transition: all 0.5s;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.addbox{
+.img,
+.add {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1E1E20;
+}
+
+.img:hover,
+.add:hover {
+    box-shadow: 0.2px 0.2px 0px 1px white;
+}
+
+.img:hover img {
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.box p {
+    margin-top: 10px;
+}
+
+.box-button {
+    margin: 60px;
+    color: white;
+}
+
+.add {
     width: 160px;
     height: 160px;
-    max-width: 160px;
-    border-radius: 10px;
-    opacity: 0,5;
-    
 }
 
-
-.addbox img{
+.add img {
     width: 53px;
     height: 53px;
-    margin: 30% auto; 
-    opacity: 0.5;  
+    margin: 34% auto;
+    opacity: 0.5;
 }
 
-.addbox img:hover{
+.box:hover {
+    opacity: 1;
+    color: white;
+}
+
+.box:hover img {
     opacity: 1;
 }
 
 
-.addbox:hover,
-.imgbox:hover {
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: all 0.5s;
-}
+/* Botão */
 
-
-.imgbox,
-.addbox {
-    overflow: hidden;
-}
-
-.box03 {
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-.botao {
+.button {
+    margin: 0 auto;
+    width: 206px;
+    height: 40px;
+    border: 1px solid;
     cursor: pointer;
-    text-align: center;
-    width: 150px;
-    padding: 10px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-.botao:hover {
+.button:hover {
     color: black;
     background-color: white;
-
 }
+
+.button p {
+    padding: 6%;
+}
+
+/* ---------- Fim do main ---------- */

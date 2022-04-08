@@ -1,74 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>S2-06 | 🏁 Entrega - CSS: Desenvolvendo Interface KenzieFlix</title>
+    <link rel="stylesheet" href="reset.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Sans:wght@600&family=Neonderthaw&family=Sedgwick+Ave&display=swap');
     </style>
+    <title>KenzieFlix</title>
 </head>
 
 <body>
-    <main class="container">
+    <header>
+        <div class="logo">
+            <img src="img/00.png" alt="Logo">
+        </div>
+    </header>
 
-        <ul>
-            <li>
-                <div class="box01">
-                    <img src="img/00.png" alt="Logo">
-                    <p>Quem está assistindo?</p>
+    <main>
+        <h2>Quem está assistindo?</h2>
+
+        <section class="users-box">
+            <div class="box">
+                <div class="img">
+                    <img src="img/01.png" alt="User01">
                 </div>
-            </li>
-            <li>
-                <div class="box02">
-                    <div class="box">
-                        <div class="imgbox">
-                            <img src="img/01.png" alt="user01">
-                        </div>
-                        <p>Aline</p>
-                    </div>
+                <p>Aline</p>
+            </div>
 
-                    <div class="box">
-                        <div class="imgbox">
-                            <img src="img/02.png" alt="user02">
-                        </div>
-                        <p>Pedrinho</p>
-                    </div>
-
-                    <div class="box">
-                        <div class="imgbox">
-                            <img src="img/03.png" alt="user03">
-                        </div>
-                        <p>Júlia</p>
-                    </div>
-
-                    <div class="box">
-                        <div class="addbox">
-                            <img id="add" src="img/04.png" alt="user04">
-                        </div>
-                        <p>Adicionar Perfil</p>
-                    </div>
+            <div class="box">
+                <div class="img">
+                    <img src="img/02.png" alt="User02">
                 </div>
-            </li>
-            <li>
-                <div class="box03">
-                    <div class="botao">
-                        <p>Gerenciar Perfis</p>
-                    </div>
+                <p>Pedrinho</p>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="img/03.png" alt="User03">
                 </div>
-            </li>
-        </ul>
+                <p>Júlia</p>
+            </div>
 
+            <div class="box">
+                <div class="add">
+                    <img src="img/04.png" alt="User">
+                </div>
+                <p>Adicionar Perfil</p>
+            </div>
+        </section>
 
-
+        <div class="box-button">
+            <div class="button">
+                <p>Gerenciar Perfis</p>
+            </div>
+        </div>
 
 
     </main>
-
 </body>
 
 </html>
